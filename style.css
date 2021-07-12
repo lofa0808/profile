@@ -21,6 +21,13 @@ html {
 .clear::after {
     clear: both;
 }
+@keyframes fadeIn {
+    from {
+        
+    } to {
+
+    }
+}
 /* css */
 
 /* header */
@@ -52,15 +59,14 @@ html {
 .main-img img {
     margin-top: 50px;
     width: 100%;
+    display: inline;
 }
 /* introduce */
-#content {
+.introduce {
+    padding: 64px 0;
     text-align: center;
     width: 800px;
     margin: 0 auto;
-}
-.introduce {
-    padding: 64px 0;
 } 
 .heading-text {
     text-transform: uppercase;
@@ -108,12 +114,13 @@ html {
     border-radius: 5px;
     display: block;
     position: relative;
-    transition: position 2s;
+    top: 0;
+    opacity: 1;
+    transition: top 0.3s linear, opacity 0.5s linear;
 }
 .introduce__items img:hover {
     opacity: 0.8;
     top: -10px;
-    transition: position 2s;
 }
 .introduce__items h2 {
     font-size: 18px;
@@ -139,7 +146,8 @@ html {
     border-radius: 5px;
     background-color: #fff;
     position: relative;
-    transition: 0.6s;
+    top: 0;
+    transition: top 0.5s linear, opacity 0.3s linear;
 }
 .photo__item img {
     border-radius: 5px;
@@ -148,16 +156,79 @@ html {
 .photo__item:hover {
     opacity: 0.8;
     top: -22px;
-    transition: 0.6s;
+}
+.photo__item-pos {
+    top: -22px;
+    transition: top 0.5s linear, opacity 0.3s linear;
+}
+.photo__item-pos:hover {
+    top: 22px;
 }
 /* contact */
 .contact {
-    height: 500px;
+    text-align: center;
+    margin: 0 auto;
+    width: 800px;
+    height: 900px;
+    padding: 64px 0;
 }
+.contact .contact__Social-item {
+    height: 185px;
+    width: 175px;
+    margin-top: 64px;
+    border-radius: 5px;
+    opacity: 1;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 0;
+    transition: top 0.5s linear, opacity 0.3s linear;
+}
+.contact__Social-list a {
+    text-decoration: none;
+}
+.contact .contact__Social-item:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    top: -10px;
+}
+.social--list1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.social--list2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.Social-icon {
+    font-size: 48px;
+    color: #fff;
+    align-self: center;
+}
+.Social--fb {
+    background-color: #1094F4;
+}
+.Social--ins {
+    background-color: #E1306C;
+}
+.Social--ytb {
+    background-color: #FF0000;
+}
+.Social--soundcloud {
+    background-color: #FF6500;
+}
+.Social--twitter {
+    background-color: #1DA1F2;
+}
+.Social--mail {
+    background-color: #FBBC05;
+}
+
+
 /* footer */
 #footer {
     background-color: #000;
     color: #fff;
-    padding: 32px 0;
+    padding: 16px 0;
     text-align: center;
 }
