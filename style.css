@@ -21,13 +21,7 @@ html {
 .clear::after {
     clear: both;
 }
-@keyframes fadeIn {
-    from {
-        
-    } to {
 
-    }
-}
 /* css */
 
 /* header */
