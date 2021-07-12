@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+/* thuộc tính chung */
+.mt-8 {
+    margin-top: 8px;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.mt-32 {
+    margin-top: 32px;
+}
+.clear::after {
+    clear: both;
+}
+/* css */
+
+/* header */
+#header {
+    background-color: #000;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.header__list {
+    display: flex;
+    justify-content: space-evenly;
+}
+#header a {
+    width: 25%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 14px 50px;
+}
+#header a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+.main-img img {
+    margin-top: 50px;
+    width: 100%;
+}
+/* introduce */
+#content {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+.introduce {
+    padding: 64px 0;
+} 
+.heading-text {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 48px;
+}
+.introduce h2 {
+    font-size: 32px;
+    font-weight: 300;
+}
+.introduce .sub-heading {
+    font-style: italic;
+}
+.introduce .introduce__heading {
+    text-align: left;
+    margin: 16px 0 32px;
+}
+.introduce__yourself {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 50px;
+    text-align: start;
+}
+.introduce__yourself li {
+    margin-bottom: 5px;
+}
+.introduce__yourself li p{
+    display: inline;
+    font-weight: 400;
+    color: #000;
+    margin-left: 10px;
+}
+.introduce__yourself-link {
+    color: #000;
+}
+.introduce__list {
+    display: flex;
+    justify-content: space-between;
+}
+.introduce__items {
+    width: 30%;
+}
+.introduce__items img {
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    transition: position 2s;
+}
+.introduce__items img:hover {
+    opacity: 0.8;
+    top: -10px;
+    transition: position 2s;
+}
+.introduce__items h2 {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.background-black {
+    width: 100%;
+    background-color: #000;
+}
+.photos {
+    text-align: center;
+    padding: 64px 0;
+}
+.photos__list {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.photo__item {
+    width: 300px;
+    border-radius: 5px;
+    background-color: #fff;
+    position: relative;
+    transition: 0.6s;
+}
+.photo__item img {
+    border-radius: 5px;
+    width: 100%;
+}
+.photo__item:hover {
+    opacity: 0.8;
+    top: -22px;
+    transition: 0.6s;
+}
+/* contact */
+.contact {
+    height: 500px;
+}
+/* footer */
+#footer {
+    background-color: #000;
+    color: #fff;
+    padding: 32px 0;
+    text-align: center;
+}
