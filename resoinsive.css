@@ -1,0 +1,16 @@
+/* pc */
+/* tablet */
+/* mobile */
+
+@media (max-width: 739px) {
+    
+    .introduce, 
+    .background-black, 
+    .contact {
+        max-width: 739px;
+    }
+    .introduce__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

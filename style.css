@@ -50,9 +50,10 @@ html {
     background-color: #ccc;
     color: #000;
 }
+/* img */
 .main-img img {
     margin-top: 50px;
-    width: 100%;
+    width: 100vw;
     display: inline;
 }
 /* introduce */
@@ -123,7 +124,7 @@ html {
 }
 
 .background-black {
-    width: 100%;
+    width: 100vw;
     background-color: #000;
 }
 .photos {
@@ -134,8 +135,10 @@ html {
     margin-top: 64px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .photo__item {
+    margin-top: 30px;
     width: 300px;
     border-radius: 5px;
     background-color: #fff;
@@ -151,13 +154,7 @@ html {
     opacity: 0.8;
     top: -22px;
 }
-.photo__item-pos {
-    top: -22px;
-    transition: top 0.5s linear, opacity 0.3s linear;
-}
-.photo__item-pos:hover {
-    top: 22px;
-}
+
 /* contact */
 .contact {
     text-align: center;
@@ -221,6 +218,7 @@ html {
 
 /* footer */
 #footer {
+    width: 100vw;
     background-color: #000;
     color: #fff;
     padding: 16px 0;
