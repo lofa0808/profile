@@ -53,7 +53,7 @@ html {
 /* img */
 .main-img img {
     margin-top: 50px;
-    width: 100vw;
+    width: 100%;
     display: inline;
 }
 /* introduce */
@@ -124,7 +124,7 @@ html {
 }
 
 .background-black {
-    width: 100vw;
+    width: 100%;
     background-color: #000;
 }
 .photos {
@@ -136,6 +136,7 @@ html {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    transition: flex-wrap 1s linear;
 }
 .photo__item {
     margin-top: 30px;
@@ -149,6 +150,7 @@ html {
 .photo__item img {
     border-radius: 5px;
     width: 100%;
+    display: block;
 }
 .photo__item:hover {
     opacity: 0.8;
@@ -218,7 +220,7 @@ html {
 
 /* footer */
 #footer {
-    width: 100vw;
+    width: 100%;
     background-color: #000;
     color: #fff;
     padding: 16px 0;
