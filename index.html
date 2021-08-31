@@ -30,8 +30,8 @@
             <label for="nav__input" class="mobile__bar">
                 <i class="fas fa-bars"></i>
             </label>
-            <div class="mobile__list-content">
-                <ul class="mobile__list">
+            <div class="nav__mobile">
+                <ul class="nav__mobile-list">
                     <li><a href="#">Home</a></li>
                     <li><a href="#gioithieu">Giới thiệu</a></li>
                     <li><a href="#anh">Ảnh</a></li>
@@ -59,36 +59,41 @@
                 <ul class="introduce__yourself-list">
                     <li><i class="ti-user"></i><p>Ngày sinh: 08/08/2002</p></li>
                     <li><i class="ti-user"></i><p>Giới tính: Nam</p></li>
-                    <li><i class="ti-location-pin"></i><p>Sống tại <a class="introduce__yourself-link" href="https://bit.ly/3yPxF46" target="_blank">Huế</a></p></li>
-                    <li><i class="ti-briefcase"><p>Học CNTT tại <a class="introduce__yourself-link" href="https://www.facebook.com/husc.edu.vn" target="_blank">Đại học khoa học Huế</a></p></i></li>
-                    <li><i class="ti-briefcase"><p>Từng Học tại <a class="introduce__yourself-link" href="https://www.facebook.com/nguyentruongto.hue" target="_blank">THPT Nguyễn Trường Tộ</a></p></i></li>
+                    <li><i class="ti-location-pin"></i><p>Sống tại <a class="introduce__yourself-link" href="https://bit.ly/3yPxF46" target="_blank">
+                        Huế</a></p></li>
+                    <li><i class="ti-briefcase"><p>Học CNTT tại <a class="introduce__yourself-link" href="https://www.facebook.com/husc.edu.vn" target="_blank">
+                        Đại học khoa học Huế</a></p></i></li>
+                    <li><i class="ti-briefcase"><p>Từng Học tại <a class="introduce__yourself-link" href="https://www.facebook.com/nguyentruongto.hue" target="_blank">
+                        THPT Nguyễn Trường Tộ</a></p></i></li>
                 </ul>
             </div>
             <h2 class="introduce__heading">Sở thích</h2>
-            <div class="introduce__list">
-                <div class="introduce__items">
-                    <img src="./img/coder.jpg" alt="">
-                    <h2>Lập trình viên (coder)</h2>
-                </div>
-                <div class="introduce__items">
-                    <img src="./img/football.jpg" alt="">
-                    <h2>Bóng đá</h2>
-                </div>
-                <div class="introduce__items">
-                    <img src="./img/nghenhac.jpg" alt="">
-                    <h2>Nghe nhạc</h2>
-                </div>
-                <div class="introduce__items">
-                    <img src="./img/producer.jpg" alt="">
-                    <h2>Làm nhạc (producer)</h2>
-                </div>
-                <div class="introduce__items">
-                    <img src="./img/dulich.jpg" alt="">
-                    <h2>Du lịch (đi chơi)</h2>
-                </div>
-                <div class="introduce__items">
-                    <img src="./img/lehoiamnhac.jpg" alt="">
-                    <h2>Lễ hội âm nhạc</h2>
+            <div class="introduce__list grid">
+                <div class="row">
+                    <div class="introduce__items col l-4 m-6 c-12">
+                        <div class="introduce__img"><img src="./img/coder.jpg" alt=""></div>
+                        <h2>Lập trình viên (coder)</h2>
+                    </div>
+                    <div class="introduce__items col l-4 m-6 c-12">
+                        <div class="introduce__img"><img src="./img/football.jpg" alt=""></div>
+                        <h2>Bóng đá</h2>
+                    </div>
+                    <div class="introduce__items col l-4 m-6 c-12">
+                        <div class="introduce__img"><img src="./img/nghenhac.jpg" alt=""></div>
+                        <h2>Nghe nhạc</h2>
+                    </div>
+                    <div class="introduce__items col l-4 m-6 c-12">
+                        <div class="introduce__img"><img src="./img/producer.jpg" alt=""></div>
+                        <h2>Làm nhạc (producer)</h2>
+                    </div>
+                    <div class="introduce__items col l-4 m-6 c-12">
+                        <div class="introduce__img"><img src="./img/dulich.jpg" alt=""></div>
+                        <h2>Du lịch (đi chơi)</h2>
+                    </div>
+                    <div class="introduce__items col l-4 m-6 c-12">
+                        <div class="introduce__img"><img src="./img/lehoiamnhac.jpg" alt=""></div>
+                        <h2>Lễ hội âm nhạc</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,12 +114,38 @@
         <div class="contact" id="lienhe">
             <h1 class="heading-text">Contact</h1>
             <div class="contact__Social-list grid">
-                <a href="https://www.facebook.com/lofa882002" target="_blank"><div class="contact__Social-item Social--fb"><i class="fab fa-facebook-f Social-icon"></i></div></a>
-                <a href="https://www.instagram.com/lofa0808" target="_blank"><div class="contact__Social-item Social--ins"><i class="fab fa-instagram Social-icon"></i></div></a>
-                <a href="https://www.youtube.com/c/Lofa08082002" target="_blank"><div class="contact__Social-item Social--ytb"><i class="fab fa-youtube Social-icon"></i></div></a>
-                <a href="https://soundcloud.com/lofa08082002" target="_blank"><div class="contact__Social-item Social--soundcloud"><i class="fab fa-soundcloud Social-icon"></i></div></a>
-                <a href="https://twitter.com/lofa0808" target="_blank"><div class="contact__Social-item Social--twitter"><i class="fab fa-twitter Social-icon"></i></div></a>
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=contact.lofa@gmail.com" target="_blank"><div class="contact__Social-item Social--mail"><i class="far fa-envelope Social-icon"></i></div></a>    
+                <div class="row">
+                    <div class="col l-4 m-6 c-6">
+                        <a href="https://www.facebook.com/lofa882002" target="_blank">
+                            <div class="contact__Social-item Social--fb"><i class="fab fa-facebook-f Social-icon"></i></div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-6">
+                        <a href="https://www.instagram.com/lofa0808" target="_blank">
+                            <div class="contact__Social-item Social--ins"><i class="fab fa-instagram Social-icon"></i></div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-6">
+                        <a href="https://www.youtube.com/c/Lofa08082002" target="_blank">
+                            <div class="contact__Social-item Social--ytb"><i class="fab fa-youtube Social-icon"></i></div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-6">
+                        <a href="https://soundcloud.com/lofa08082002" target="_blank">
+                            <div class="contact__Social-item Social--soundcloud"><i class="fab fa-soundcloud Social-icon"></i></div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-6">
+                        <a href="https://twitter.com/lofa0808" target="_blank">
+                            <div class="contact__Social-item Social--twitter"><i class="fab fa-twitter Social-icon"></i></div>
+                        </a>
+                    </div>
+                    <div class="col l-4 m-6 c-6">
+                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=contact.lofa@gmail.com" target="_blank">
+                            <div class="contact__Social-item Social--mail"><i class="far fa-envelope Social-icon"></i></div>
+                        </a>
+                    </div>        
+                </div>
             </div>
         </div>
         <div id="footer">

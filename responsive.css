@@ -25,7 +25,6 @@
     .introduce,
     .contact {
         width: auto;
-        /* max-width: 320px; */
         padding: 64px 8px;
     }
 
@@ -52,11 +51,6 @@
         margin: 0 auto;
     }
 
-    .contact__Social-item {
-        height: 150px;
-        width: 130px;
-        margin-top: 32px;
-    }
     /* mobile bar */
     .mobile__bar {
         display: block;
