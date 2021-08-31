@@ -1,5 +1,10 @@
 /* pc */
 /* tablet */
+/* mobile and tablet */
+@media (max-width: 1024px) {
+    
+}
+
 @media (min-width: 740px) and (max-width: 1024px) {
     .introduce,
     .contact {
@@ -12,6 +17,9 @@
     .introduce__list {
         display: flex;
         flex-wrap: wrap;
+    }
+    .introduce__items {
+        width: 50%;
     }
 
     .introduce,
@@ -48,5 +56,16 @@
         height: 150px;
         width: 130px;
         margin-top: 32px;
+    }
+    /* mobile bar */
+    .mobile__bar {
+        display: block;
+    }
+    .header__list {
+        flex-direction: column;
+    }
+    .mobile__list li {
+        flex: 1;
+        display: block;
     }
 }

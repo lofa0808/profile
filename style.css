@@ -38,13 +38,12 @@ html {
     left: 0;
     z-index: 1;
 }
-
 .header__list {
     display: flex;
     justify-content: space-evenly;
 }
 
-#header a {
+.header__list a {
     width: 25%;
     text-decoration: none;
     color: #fff;
@@ -53,9 +52,87 @@ html {
     padding: 14px 50px;
 }
 
-#header a:hover {
+.header__list a:hover {
     background-color: #ccc;
     color: #000;
+}
+.mobile__bar {
+    font-size: 26px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 8px 16px;
+    display: none;
+}
+
+.mobile__bar:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.mobile__list-content {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    background-color: #fff;
+    transform: translateX(100%);
+    z-index: 1;
+    transition: transform linear 0.5s;
+}
+.mobile__list {
+    flex-direction: column;
+    list-style: none;
+    margin-top: 48px;
+}
+.mobile__list a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 8px 16px;
+    display: block;
+}
+.mobile__list a:hover {
+    background-color: #ccc;
+}
+.mobile__close {
+    position: absolute;
+    font-size: 32px;
+    color: #000;
+    top: 0;
+    right: 0;
+    font-weight: 200;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.3s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#nav__input:checked ~ .nav__overlay {
+    display: block;
+}
+
+#nav__input:checked ~ .mobile__list-content {
+    transform: translateX(0%);
 }
 /* img */
 .main-img img {
@@ -89,7 +166,7 @@ html {
 
 .introduce .introduce__heading {
     text-align: left;
-    margin: 16px 0 32px;
+    margin: 32px 0 32px;
 }
 
 .introduce__yourself {
@@ -121,29 +198,31 @@ html {
 }
 
 .introduce__items {
+    overflow: hidden;
     width: 30%;
+    border-radius: 5px;
+    /* height: 130px; */
 }
 
 .introduce__items img {
-    width: 100%;
     height: 160px;
-    border-radius: 5px;
+    width: 100%;
     display: block;
     position: relative;
-    top: 0;
     opacity: 1;
-    transition: top 0.3s linear, opacity 0.5s linear;
+    transition: transform linear 0.3s, opacity linear 0.3s;
 }
 
 .introduce__items img:hover {
     opacity: 0.8;
-    top: -10px;
+    transform: scale(1.1);
 }
 
 .introduce__items h2 {
+    display: inline-block;
     font-size: 18px;
     font-weight: 600;
-    padding: 8px 0;
+    padding: 16px 0;
 }
 
 .background-black {
@@ -213,8 +292,7 @@ html {
 }
 
 .contact__Social-list a {
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 
 .contact .contact__Social-item:hover {

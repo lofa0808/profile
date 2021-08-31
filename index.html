@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LofA</title>
     <link rel="icon" href="img/lofa.jpg" type="image/icon type">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="../../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../themify-icons/themify-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
@@ -24,6 +25,25 @@
                 <li><a href="#anh">Ảnh</a></li>
                 <li><a href="#lienhe">Liên hệ</a></li>
             </ul>
+            <!-- mobile sidebar -->
+            <input type="checkbox" hidden name="" id="nav__input">
+            <label for="nav__input" class="mobile__bar">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div class="mobile__list-content">
+                <ul class="mobile__list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#gioithieu">Giới thiệu</a></li>
+                    <li><a href="#anh">Ảnh</a></li>
+                    <li><a href="#lienhe">Liên hệ</a></li>
+                </ul>
+                <label for="nav__input" class="mobile__close">
+                    <i class="fas fa-times"></i>
+                </label>
+            </div>
+            <label for="nav__input" class="nav__overlay">
+                
+            </label>
         </div>
         <div class="main-img">
             <img src="./img/DSC09632 copy.jpg" alt="ảnh">
@@ -88,16 +108,15 @@
         <!-- contact -->
         <div class="contact" id="lienhe">
             <h1 class="heading-text">Contact</h1>
-            <div class="contact__Social-list">
+            <div class="contact__Social-list grid">
                 <a href="https://www.facebook.com/lofa882002" target="_blank"><div class="contact__Social-item Social--fb"><i class="fab fa-facebook-f Social-icon"></i></div></a>
                 <a href="https://www.instagram.com/lofa0808" target="_blank"><div class="contact__Social-item Social--ins"><i class="fab fa-instagram Social-icon"></i></div></a>
                 <a href="https://www.youtube.com/c/Lofa08082002" target="_blank"><div class="contact__Social-item Social--ytb"><i class="fab fa-youtube Social-icon"></i></div></a>
                 <a href="https://soundcloud.com/lofa08082002" target="_blank"><div class="contact__Social-item Social--soundcloud"><i class="fab fa-soundcloud Social-icon"></i></div></a>
                 <a href="https://twitter.com/lofa0808" target="_blank"><div class="contact__Social-item Social--twitter"><i class="fab fa-twitter Social-icon"></i></div></a>
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=contact.lofa@gmail.com" target="_blank"><div class="contact__Social-item Social--mail"><i class="far fa-envelope Social-icon"></i></div></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=contact.lofa@gmail.com" target="_blank"><div class="contact__Social-item Social--mail"><i class="far fa-envelope Social-icon"></i></div></a>    
             </div>
         </div>
-
         <div id="footer">
             <h3>Copyright©LofA</h3>
         </div>
